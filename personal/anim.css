@@ -1,0 +1,22 @@
+
+@keyframes raiseup {
+    from { transform: translateY(-0.5) scale(0.5) }
+    to { transform: translateY(-0.5em) scale(0.5) }
+}
+
+@-webkit-keyframes raiseup {
+    from { transform: translateY(-0.5) scale(0.5) }
+    to { transform: translateY(-0.5em) scale(0.5) }
+}
+
+
+@keyframes blurin {
+    0% { filter: blur(4em); }
+    100% { filter: blur(0); }
+}
+
+@-webkit-keyframes blurin {
+    0% { filter: blur(4em); }
+    100% { filter: blur(0); }
+}
+

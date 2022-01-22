@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); /* Inter */
+
+
+
+
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+body, .stuff{
+    background-color: #3e4345;
+}
+html{
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.typewriter h1{
+    font-size: 4em;
+    color: orange;
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    float: left;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    /*border-right: .15em dotted limegreen;*/
+    margin: 0 auto;
+    letter-spacing: .10em;
+    /* text-shadow: 1px 2px 1px black; */
+    background: linear-gradient(to right, orange, rgb(255, 121, 237));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-repeat: repeat;
+}
+#about {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: #ffa0b1;
+    font-size: 2.3em;
+    font-family: 'Inter', sans-serif;
+    float: left;
+    background: linear-gradient(-45deg, rgb(255, 208, 1), rgb(255, 0, 242));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-repeat: repeat;
+    font-weight: 500;
+}
+
+.fadeup:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    -webkit-transform: scale(2);
+    
+}
+
+
+.social {
+    position: absolute;
+    top: 70%;
+    left: 8%;
+
+}
+.social_gh, .social_ltt {
+    box-shadow: 0px 110px 38px -26px black;
+    height: 0;
+    width: 0;
+}
+.social_ltt {
+    margin-left: 5em;
+}
+
+.social_gh:after {
+    content: url("assets/GitHub-Mark-Light-120px-plus.png");
+    display: inline-block;
+    transform: scale(0.5);
+    padding: 0;
+    margin: 0;
+    
+}
+.social_gh:before {
+    content: "RockSolid1106 on Github";
+    display: inline-block;
+    position: absolute;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 0.2em;
+    background-color: rgb(133, 132, 132);
+    font-size: 1.2em;
+    color: #ffa0b1;
+    width: 11.5em;
+    padding: 0.73em;
+    text-align: center;
+    opacity: 0;
+    transition: 250ms all;
+    transform: translate(-20%, -2em);
+    font-family: 'Roboto', sans-serif;
+}
+.social_gh:hover:before{
+    opacity: 1;
+}
+
+.social_gh:hover:after, .social_ltt:hover:after {
+    animation: raiseup 300ms ease-out forwards;
+    -webkit-animation: raiseup 300ms ease-out forwards;
+}
+
+
+.social_ltt:after {
+    content: url("assets/lttlogo.png");
+    transform: scale(0.5);
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.social_ltt:before {
+    content: "RockSolid1106 on the Linus Tech Tips Forum";
+    display: inline-block;
+    position: absolute;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 0.2em;
+    background-color: rgb(133, 132, 132);
+    font-size: 1.2em;
+    color: #ffa0b1;
+    width: 11.5em;
+    padding: 0.73em;
+    text-align: center;
+    opacity: 0;
+    transition: 250ms all;
+    transform: translate(-25%, -2.7em);
+    font-family: 'Roboto', sans-serif;
+}
+.social_ltt:hover:before {
+    opacity: 1;
+}
+
+body {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    animation: blurin forwards ease-out 1s;
+}
+
+/* For Particles.js */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3e4345;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+  }
+  
+  /* ---- stats.js ---- */
+  
+  .count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    display: none;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
