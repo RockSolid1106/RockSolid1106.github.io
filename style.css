@@ -220,6 +220,6 @@ body {
     @include transform(scale(1));
     opacity:1;
     @include animation(appear 1.4s 1);
-    //-webkit-animation-fill-mode: forwards;
+    -webkit-animation: appear 1s forwards ease-out;
     @include animation-fill-mode(forwards);
 }
