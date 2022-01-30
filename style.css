@@ -216,10 +216,25 @@ body {
   }
 }
 
-  .particles-js-canvas-el {
-    @include transform(scale(1));
+.particles-js-canvas-el {
     opacity:1;
-    @include animation(appear 1.4s 1);
     -webkit-animation: appear 1s forwards ease-out;
-    @include animation-fill-mode(forwards);
+    animation: appear 1s forwards ease-out;
+}
+
+
+@media (prefers-reduced-motion) {
+  .particles-js-canvas-el {
+    opacity:1;
+    -webkit-animation: none;
+    animation: none;
+  }
+  .social_gh:hover:after, .social_ltt:hover:after {
+    animation: none;
+    -webkit-animation: none;
+  }
+  body {
+    animation: none;
+    -webkit-animation: none;
+  }
 }
