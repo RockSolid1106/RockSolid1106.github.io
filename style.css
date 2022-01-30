@@ -204,3 +204,22 @@ body {
   .count-particles{
     border-radius: 0 0 3px 3px;
   }
+  
+@keyframes appear{
+  from {
+    @include transform(scale(0));
+    opacity:0;
+  }
+  to {
+    @include transform(scale(1));
+    opacity:1;
+  }
+}
+
+  .particles-js-canvas-el {
+    @include transform(scale(1));
+    opacity:1;
+    @include animation(appear 1.4s 1);
+    //-webkit-animation-fill-mode: forwards;
+    @include animation-fill-mode(forwards);
+}
