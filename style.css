@@ -238,3 +238,28 @@ body {
     -webkit-animation: none;
   }
 }
+
+
+svg:hover polyline{
+  stroke-dasharray: 250;
+  animation: draw 2s infinite ease-in-out;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 250;
+  }
+  0% {
+    stroke-dashoffset: 500;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  svg:hover polyline{
+    stroke-dasharray: 0;
+    animation: none;
+  }
+}
