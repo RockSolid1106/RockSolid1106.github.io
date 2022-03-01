@@ -1,14 +1,25 @@
-
-@keyframes raiseup {
-    from { transform: translateY(-0.5) scale(0.5) }
-    to { transform: translateY(-0.5em) scale(0.5) }
-}
-
-@-webkit-keyframes raiseup {
-    from { transform: translateY(-0.5) scale(0.5) }
-    to { transform: translateY(-0.5em) scale(0.5) }
-}
-
+@keyframes appear{
+    from {
+      transform: scale(0);
+      opacity:0;
+    }
+    to {
+      transform: scale(1);
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes appear{
+    from {
+      transform: scale(0);
+      opacity:0;
+    }
+    to {
+      transform: scale(1);
+      opacity:1;
+    }
+  }
+  
 
 @keyframes blurin {
     0% { filter: blur(4em); }
@@ -18,4 +29,164 @@
 @-webkit-keyframes blurin {
     0% { filter: blur(4em); }
     100% { filter: blur(0); }
+}
+
+@keyframes animfadein {
+    0% {
+        opacity: 0;
+        transform: translateY(2em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+@-webkit-keyframes animfadein {
+    0% {
+        opacity: 0;
+        transform: translateY(2em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+@keyframes hreffadein {
+    0% {
+        opacity: 0;
+        transform: translateY(0em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(1em);
+    }
+}
+@-webkit-keyframes hreffadein {
+    0% {
+        opacity: 0;
+        transform: translateY(0em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(1em);
+    }
+}
+
+@keyframes keyb1 {
+    from {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    to {
+        top: 35%;
+        left: -10%;
+        height: 15em;
+        width: auto;
+        opacity: 1;
+    }
+}
+@keyframes keyb2 {
+    from {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    to {
+        top: 35%;
+        left: 43%;
+        height: 15em;
+        width: auto;
+        opacity: 1;
+    }
+}
+@keyframes keyb3 {
+    from {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    to {
+        top: 35%;
+        left: 96%;
+        height: 15em;
+        width: auto;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes keyb1 {
+    from {
+        top: 0;
+        right: 0;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    to {
+        top: 35%;
+        left: -10%;
+        height: 15em;
+        width: auto;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes keyb2 {
+    from {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    to {
+        top: 35%;
+        left: 43%;
+        height: 15em;
+        width: auto;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes keyb3 {
+    from {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    to {
+        top: 35%;
+        left: 96%;
+        height: 15em;
+        width: auto;
+        opacity: 1;
+    }
+}
+
+@keyframes animfadeout {
+    from {
+        opacity: 1;
+        transform: translateY(0em);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(2em);
+    }
+}
+@-webkit-keyframes animfadeout {
+    from {
+        opacity: 1;
+        transform: translateY(0em);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(2em);
+    }
 }
