@@ -307,14 +307,44 @@ faders.forEach(fader => {
 function displaykeybimag() {
     setTimeout(function(){
         document.getElementById("keyb-1").classList.add("appear")
+        var parent = "#keybphoto"
+        var elem = "#keyb-1"
+        var par = $(parent).position()
+        var width = $(parent).outerWidth()
+        var height = $(parent).outerHeight()
+        $(elem).css({
+            position: "absolute",
+            top: (par.top + height + height*50/100) + "px",
+            left: (par.left + width*2.3/4 - $(elem).outerWidth() - 20) + "px"
+        })
         try{document.getElementById("keyb-1").classList.remove("disappear")}catch(ex){console.log(ex)}
     }, 00);
     setTimeout(function(){
         document.getElementById("keyb-2").classList.add("appear")
+        var parent = "#butphotos"
+        var elem = "#keyb-2"
+        var par = $(parent).position()
+        var width = $(parent).outerWidth()
+        var height = $(parent).outerHeight()
+        $(elem).css({
+            position: "absolute",
+            top: (par.top + height + height*50/100) + "px",
+            left: (par.left + width/2 - $(elem).outerWidth()/2 + 20) + "px"
+        })
         try{document.getElementById("keyb-2").classList.remove("disappear")}catch(ex){console.log(ex)}
     }, 200);
     setTimeout(function(){
         document.getElementById("keyb-3").classList.add("appear")
+        var parent = "#butphotos"
+        var elem = "#keyb-3"
+        var par = $(parent).position()
+        var width = $(parent).outerWidth()
+        var height = $(parent).outerHeight()
+        $(elem).css({
+            position: "absolute",
+            top: (par.top + height + height*50/100) + "px",
+            left: (par.left + width/2 + $(elem).outerWidth()/2 + 40) + "px"
+        })
         try{document.getElementById("keyb-3").classList.remove("disappear")}catch(ex){console.log(ex)}
     }, 400);
 }
@@ -337,9 +367,29 @@ function removekeybimag() {
 function displaybuttimag() {
     setTimeout(function(){
         document.getElementById("butt-1").classList.add("appear")
+        var parent = "#butphotos"
+        var elem = "#butt-1"
+        var par = $(parent).position()
+        var width = $(parent).outerWidth()
+        var height = $(parent).outerHeight()
+        $(elem).css({
+            position: "absolute",
+            top: (par.top + height + height*50/100) + "px",
+            left: (par.left + width/2 - $(elem).outerWidth() - 12.5) + "px"
+        })
         try{document.getElementById("butt-1").classList.remove("disappear")}catch(ex){console.log(ex)}}, 0);
     setTimeout(function(){
         document.getElementById("butt-2").classList.add("appear")
+        var parent = "#butphotos"
+        var elem = "#butt-2"
+        var par = $(parent).position()
+        var width = $(parent).outerWidth()
+        var height = $(parent).outerHeight()
+        $(elem).css({
+            position: "absolute",
+            top: (par.top + height + height*50/100) + "px",
+            left: (par.left + width/2 + 12.5) + "px",
+        })
         try{document.getElementById("butt-2").classList.remove("disappear")}catch(ex){console.log(ex)}
     }, 200);
 }
@@ -356,6 +406,16 @@ function removebuttimag() {
 
 function displayheadimag() {
     document.getElementById("headphones").classList.add("appear")
+    var parent = "#headphoto"
+    var elem = "#headphones"
+    var par = $(parent).position()
+    var width = $(parent).outerWidth()
+    var height = $(parent).outerHeight()
+    $(elem).css({
+        position: "absolute",
+        top: (par.top + height + height*50/100) + "px",
+        left: (par.left + width*2.3/4 - $(elem).outerWidth()/2) + "px"
+    })
     try{document.getElementById("headphones").classList.remove("disappear")}catch(ex){console.log(ex)};
 }
 function removeheadimag() {
@@ -365,6 +425,16 @@ function removeheadimag() {
 
 function displaypenimag() {
     document.getElementById("pen").classList.add("appear")
+    var parent = "#penphoto"
+    var elem = "#pen"
+    var par = $(parent).position()
+    var width = $(parent).outerWidth()
+    var height = $(parent).outerHeight()
+    $(elem).css({
+        position: "absolute",
+        top: (par.top + height + height*50/100) + "px",
+        left: (par.left + width*2.3/4 - $(elem).outerWidth()/2) + "px"
+    })
     try{document.getElementById("pen").classList.remove("disappear")}catch(ex){console.log(ex)};
 }
 function removepenimag() {
@@ -375,6 +445,16 @@ function removepenimag() {
 
 function displaydbotimag() {
     document.getElementById("venomsc").classList.add("appear")
+    var parent = "#dbot"
+    var elem = "#venomsc"
+    var par = $(parent).position()
+    var width = $(parent).outerWidth()
+    var height = $(parent).outerHeight()
+    $(elem).css({
+        position: "absolute",
+        top: (par.top + height/2 - $(elem).outerHeight()/2) + "px",
+        left: (par.left + width + 20) + "px"
+    })
     try{document.getElementById("venomsc").classList.remove("disappear")}catch(ex){console.log(ex)};
 }
 function removedbotimag() {
@@ -384,6 +464,16 @@ function removedbotimag() {
 
 function displaycustimag() {
     document.getElementById("cust").classList.add("appear")
+    var parent = "#customizer"
+    var elem = "#cust"
+    var par = $(parent).position()
+    var width = $(parent).outerWidth()
+    var height = $(parent).outerHeight()
+    $(elem).css({
+        position: "absolute",
+        top: (par.top + height/2 - $(elem).outerHeight()/2) + "px",
+        left: (par.left + width + 20) + "px"
+    })
     try{document.getElementById("cust").classList.remove("disappear")}catch(ex){console.log(ex)};
 }
 function removecustimag() {

@@ -431,7 +431,7 @@ svg:hover polyline{
 
 
 .keybimages {
-  height: 15em;
+  height: 30vh;
   width: auto;
   /* display: none; */
   position: absolute;
@@ -443,10 +443,6 @@ svg:hover polyline{
   pointer-events: none;
   transition: all 400ms ease;
   position: absolute;
-  top: 35%;
-  left: -10%;
-  height: 15em;
-  width: auto;
   opacity: 0;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   
@@ -456,10 +452,6 @@ svg:hover polyline{
   pointer-events: none;
   transition: all 400ms ease;
   position: absolute;
-  top: 35%;
-  left: 43%;
-  height: 15em;
-  width: auto;
   opacity: 0;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   
@@ -469,10 +461,6 @@ svg:hover polyline{
   pointer-events: none;
   transition: all 400ms ease;
   position: absolute;
-  top: 35%;
-  left: 96%;
-  height: 15em;
-  width: auto;
   opacity: 0;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   
@@ -498,10 +486,7 @@ svg:hover polyline{
   pointer-events: none;
   transition: all 400ms ease;
   position: absolute;
-  top: 35%;
-  left: 8%;
-  height: 15em;
-  width: auto;
+
   opacity: 0;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   
@@ -511,10 +496,8 @@ svg:hover polyline{
   pointer-events: none;
   transition: all 400ms ease;
   position: absolute;
-  top: 35%;
-  left: 60%;
-  height: 15em;
-  width: auto;
+
+
   opacity: 0;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   
@@ -522,11 +505,6 @@ svg:hover polyline{
 #headphones {
   pointer-events: none;
   transition: all 400ms ease;
-  position: absolute;
-  top: 47%;
-  left: 57%;
-  height: 15em;
-  width: auto;
   opacity: 0;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -535,8 +513,7 @@ svg:hover polyline{
   pointer-events: none;
   transition: all 400ms ease;
   position: absolute;
-  top: 47%;
-  left: 72%;
+
   height: 15em;
   width: auto;
   opacity: 0;
