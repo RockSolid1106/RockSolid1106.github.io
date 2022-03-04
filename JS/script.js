@@ -307,7 +307,7 @@ faders.forEach(fader => {
 function displaykeybimag() {
     setTimeout(function(){
         document.getElementById("keyb-1").classList.add("appear")
-        var parent = "#keybphoto"
+        var parent = "#keybhref"
         var elem = "#keyb-1"
         var par = $(parent).position()
         var width = $(parent).outerWidth()
@@ -321,7 +321,7 @@ function displaykeybimag() {
     }, 00);
     setTimeout(function(){
         document.getElementById("keyb-2").classList.add("appear")
-        var parent = "#butphotos"
+        var parent = "#keybhref"
         var elem = "#keyb-2"
         var par = $(parent).position()
         var width = $(parent).outerWidth()
@@ -329,13 +329,13 @@ function displaykeybimag() {
         $(elem).css({
             position: "absolute",
             top: (par.top + height + height*50/100) + "px",
-            left: (par.left + width/2 - $(elem).outerWidth()/2 + 20) + "px"
+            left: (par.left + width/2 + 0.5*parseFloat(getComputedStyle(document.getElementById("buthref")).fontSize)) + "px"
         })
         try{document.getElementById("keyb-2").classList.remove("disappear")}catch(ex){console.log(ex)}
     }, 200);
     setTimeout(function(){
         document.getElementById("keyb-3").classList.add("appear")
-        var parent = "#butphotos"
+        var parent = "#buthref"
         var elem = "#keyb-3"
         var par = $(parent).position()
         var width = $(parent).outerWidth()
@@ -343,8 +343,9 @@ function displaykeybimag() {
         $(elem).css({
             position: "absolute",
             top: (par.top + height + height*50/100) + "px",
-            left: (par.left + width/2 + $(elem).outerWidth()/2 + 40) + "px"
+            left: ((par.left + width/2 + $(elem).outerWidth()/2) + 2*parseFloat(getComputedStyle(document.getElementById("buthref")).fontSize)) + "px"
         })
+        console.log(parseFloat(getComputedStyle(document.getElementById("buthref")).fontSize))
         try{document.getElementById("keyb-3").classList.remove("disappear")}catch(ex){console.log(ex)}
     }, 400);
 }
@@ -367,7 +368,7 @@ function removekeybimag() {
 function displaybuttimag() {
     setTimeout(function(){
         document.getElementById("butt-1").classList.add("appear")
-        var parent = "#butphotos"
+        var parent = "#buthref"
         var elem = "#butt-1"
         var par = $(parent).position()
         var width = $(parent).outerWidth()
@@ -375,12 +376,12 @@ function displaybuttimag() {
         $(elem).css({
             position: "absolute",
             top: (par.top + height + height*50/100) + "px",
-            left: (par.left + width/2 - $(elem).outerWidth() - 12.5) + "px"
+            left: (par.left + width/2 - $(elem).outerWidth() - 0.5*parseFloat(getComputedStyle(document.getElementById("buthref")).fontSize)) + "px"
         })
         try{document.getElementById("butt-1").classList.remove("disappear")}catch(ex){console.log(ex)}}, 0);
     setTimeout(function(){
         document.getElementById("butt-2").classList.add("appear")
-        var parent = "#butphotos"
+        var parent = "#buthref"
         var elem = "#butt-2"
         var par = $(parent).position()
         var width = $(parent).outerWidth()
@@ -388,7 +389,7 @@ function displaybuttimag() {
         $(elem).css({
             position: "absolute",
             top: (par.top + height + height*50/100) + "px",
-            left: (par.left + width/2 + 12.5) + "px",
+            left: (par.left + width/2 + 0.5*parseFloat(getComputedStyle(document.getElementById("buthref")).fontSize)) + "px",
         })
         try{document.getElementById("butt-2").classList.remove("disappear")}catch(ex){console.log(ex)}
     }, 200);
@@ -406,7 +407,7 @@ function removebuttimag() {
 
 function displayheadimag() {
     document.getElementById("headphones").classList.add("appear")
-    var parent = "#headphoto"
+    var parent = "#headhref"
     var elem = "#headphones"
     var par = $(parent).position()
     var width = $(parent).outerWidth()
@@ -425,7 +426,7 @@ function removeheadimag() {
 
 function displaypenimag() {
     document.getElementById("pen").classList.add("appear")
-    var parent = "#penphoto"
+    var parent = "#penhref"
     var elem = "#pen"
     var par = $(parent).position()
     var width = $(parent).outerWidth()
@@ -445,7 +446,7 @@ function removepenimag() {
 
 function displaydbotimag() {
     document.getElementById("venomsc").classList.add("appear")
-    var parent = "#dbot"
+    var parent = "#dbothref"
     var elem = "#venomsc"
     var par = $(parent).position()
     var width = $(parent).outerWidth()
@@ -464,7 +465,7 @@ function removedbotimag() {
 
 function displaycustimag() {
     document.getElementById("cust").classList.add("appear")
-    var parent = "#customizer"
+    var parent = "#custhref"
     var elem = "#cust"
     var par = $(parent).position()
     var width = $(parent).outerWidth()
