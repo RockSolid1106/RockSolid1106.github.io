@@ -406,22 +406,39 @@ function removebuttimag() {
 
 
 function displayheadimag() {
-    document.getElementById("headphones").classList.add("appear")
+    document.getElementById("head-1").classList.add("appear")
     var parent = "#headhref"
-    var elem = "#headphones"
+    var elem = "#head-1"
     var par = $(parent).position()
     var width = $(parent).outerWidth()
     var height = $(parent).outerHeight()
     $(elem).css({
         position: "absolute",
         top: (par.top + height + height*50/100) + "px",
-        left: (par.left + width*2.3/4 - $(elem).outerWidth()/2) + "px"
+        left: (par.left + width/2 - $(elem).outerWidth() - 0.5*parseFloat(getComputedStyle(document.getElementById("headhref")).fontSize)) + "px"
     })
-    try{document.getElementById("headphones").classList.remove("disappear")}catch(ex){console.log(ex)};
+    try{document.getElementById("head-1").classList.remove("disappear")}catch(ex){console.log(ex)};
+
+    setTimeout(function(){
+      document.getElementById("head-2").classList.add("appear")
+      var parent = "#headhref"
+      var elem = "#head-2"
+      var par = $(parent).position()
+      var width = $(parent).outerWidth()
+      var height = $(parent).outerHeight()
+      $(elem).css({
+          position: "absolute",
+          top: (par.top + height + height*50/100) + "px",
+          left: (par.left + width/2 + 0.5*parseFloat(getComputedStyle(document.getElementById("headhref")).fontSize)) + "px",
+      })
+      try{document.getElementById("head-2").classList.remove("disappear")}catch(ex){console.log(ex)}
+  }, 200);
 }
 function removeheadimag() {
-    document.getElementById("headphones").classList.add("disappear")
-        document.getElementById("headphones").classList.remove("appear")
+    document.getElementById("head-1").classList.add("disappear")
+    document.getElementById("head-1").classList.remove("appear")
+    document.getElementById("head-2").classList.add("disappear")
+    document.getElementById("head-2").classList.remove("appear")
 }
 
 function displaypenimag() {
