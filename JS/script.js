@@ -329,13 +329,13 @@ function displaykeybimag() {
         $(elem).css({
             position: "absolute",
             top: (par.top + height + height*50/100) + "px",
-            left: (par.left + width/2 + 0.5*parseFloat(getComputedStyle(document.getElementById("buthref")).fontSize)) + "px"
+            left: (par.left + width/2 + 0.5*parseFloat(getComputedStyle(document.getElementById("keybhref")).fontSize)) + "px"
         })
         try{document.getElementById("keyb-2").classList.remove("disappear")}catch(ex){console.log(ex)}
     }, 200);
     setTimeout(function(){
         document.getElementById("keyb-3").classList.add("appear")
-        var parent = "#buthref"
+        var parent = "#keybhref"
         var elem = "#keyb-3"
         var par = $(parent).position()
         var width = $(parent).outerWidth()
@@ -343,7 +343,7 @@ function displaykeybimag() {
         $(elem).css({
             position: "absolute",
             top: (par.top + height + height*50/100) + "px",
-            left: ((par.left + width/2 + $(elem).outerWidth()/2) + 2*parseFloat(getComputedStyle(document.getElementById("buthref")).fontSize)) + "px"
+            left: ((par.left + width*1.7/4 + $(elem).outerWidth()) + 2*parseFloat(getComputedStyle(document.getElementById("keybhref")).fontSize)) + "px"
         })
         console.log(parseFloat(getComputedStyle(document.getElementById("buthref")).fontSize))
         try{document.getElementById("keyb-3").classList.remove("disappear")}catch(ex){console.log(ex)}
@@ -363,6 +363,7 @@ function removekeybimag() {
 
         document.getElementById("keyb-3").classList.add("disappear")
         document.getElementById("keyb-3").classList.remove("appear")
+
 }
 
 function displaybuttimag() {
