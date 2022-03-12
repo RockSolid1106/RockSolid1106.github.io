@@ -290,7 +290,7 @@ svg:hover polyline{
   width: 50%;
   left: 10%;
   top: 20%;
-  background: linear-gradient(to bottom, #033176, #040d21);
+  background: linear-gradient(to bottom, #1a2238, #0c101a);
   border-radius: 1em;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   font-family: "Inter", sans-serif;
@@ -305,7 +305,6 @@ svg:hover polyline{
   left: 5%;
   font-size: 3em;
   color: #2ea651;
-  font-weight: 800;
 }
 
 .pprogrammer > p {
@@ -398,7 +397,7 @@ svg:hover polyline{
   width: 50%;
   left: 10%;
   top: 20%;
-  background: linear-gradient(to bottom, #1595b6, rgba(31,38,103,0.9));
+  background: linear-gradient(to bottom, #1a2238, #0c101a);
   border-radius: 1em;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   font-family: "Inter", sans-serif;
@@ -412,8 +411,7 @@ svg:hover polyline{
   top: 7%;
   left: 5%;
   font-size: 3em;
-  color: orange;
-  font-weight: 800;
+  color: #d45028;
 }
 
 .amphotographer > p {
@@ -431,7 +429,6 @@ svg:hover polyline{
 .keybimages {
   height: 30vh;
   width: auto;
-  /* display: none; */
   position: absolute;
   border-radius: 0.3em;
 
@@ -516,4 +513,8 @@ svg:hover polyline{
   width: auto;
   opacity: 0;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.box-headers {
+  font-family: 'MetropolisExtraBold';
 }
