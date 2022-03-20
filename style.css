@@ -179,7 +179,7 @@ body {
     position:absolute;
     height: 100%;
     width: 100%;
-    animation: blurin forwards ease-out 1s;
+    animation: blurin forwards ease 1s;
 }
 
 /* For Particles.js */
