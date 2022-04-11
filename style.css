@@ -11,11 +11,11 @@ html{
 }
 
 ::selection {
-  background-color: #7dbcff99;
+  background-color: #3D8C99;
 }
 
 ::-moz-selection {
-  background-color: #7dbcff99;
+  background-color: #3D8C99;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -46,6 +46,9 @@ html{
   height: 100%;
   width: 100%
 }
+.typewriter {
+    user-select: none;
+}
 .typewriter h1{
     font-size: 4em;
     color: orange;
@@ -68,6 +71,7 @@ html{
     background-repeat: repeat;
 }
 #about {
+    user-select: none;
     position: absolute;
     top: 30%;
     left: 10%;
