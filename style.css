@@ -9,6 +9,14 @@ body, .stuff{
 html{
 	scroll-behavior: smooth;
 }
+
+body::selection {
+  background-color: #7dbcff99;
+}
+
+body::-moz-selection {
+  background-color: #7dbcff99;
+}
 ::-webkit-scrollbar {
     display: none;
 }
