@@ -10,11 +10,11 @@ html{
 	scroll-behavior: smooth;
 }
 
-body::selection {
+::selection {
   background-color: #7dbcff99;
 }
 
-body::-moz-selection {
+::-moz-selection {
   background-color: #7dbcff99;
 }
 ::-webkit-scrollbar {
