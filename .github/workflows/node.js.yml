@@ -10,11 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Auto Minify
+      - name: Auto Minify JS
         uses: nizarmah/auto-minify@v2.1.1
         with:
           directory: "JS"
           output: "min_js"
+          
+      - name: Auto Minify CSS
+        uses: nizarmah/auto-minify@v2.1.1
+        with:
+          directory: "CSS"
+          output: "min_css"
           
       - name: Auto committing minified files
         uses: stefanzweifel/git-auto-commit-action@v4
