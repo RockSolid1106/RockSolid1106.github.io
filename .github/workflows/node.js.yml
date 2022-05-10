@@ -6,8 +6,10 @@ on:
 
 jobs:
   minify:
+  
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Auto Minify
         uses: nizarmah/auto-minify@v2.1.1
         with:
