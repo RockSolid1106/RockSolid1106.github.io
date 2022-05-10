@@ -11,5 +11,4 @@ jobs:
       - name: Auto Minify
         uses: nizarmah/auto-minify@v2.1.1
         with:
-          directory: "JS"
-          output: "min_js"
+          directory: "JS/script.js"
