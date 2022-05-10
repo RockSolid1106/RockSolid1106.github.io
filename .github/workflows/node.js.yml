@@ -15,3 +15,9 @@ jobs:
         with:
           directory: "JS"
           output: "min_js"
+          
+      - name: Auto committing minified files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Github Action: Auto Minified JS and CSS files"
+          branch: ${{ github.ref }}
