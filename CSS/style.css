@@ -4,7 +4,7 @@ html, body{
     margin: 0;
 }
 body, .stuff{
-    background-color: #3e4345;
+    background-color: #202020;
 }
 html{
 	scroll-behavior: smooth;
@@ -48,13 +48,17 @@ html{
 }
 .typewriter {
     user-select: none;
+    display: flex;
+    justify-content: center;
 }
 .typewriter h1{
     font-size: 4em;
     color: orange;
     position: absolute;
-    top: 17%;
-    left: 10%;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
     float: left;
     overflow: hidden;
     font-family: 'Rubik', sans-serif;
@@ -62,7 +66,7 @@ html{
     margin: 0 auto;
     letter-spacing: .10em;
     /* text-shadow: 1px 2px 1px black; */
-    background: linear-gradient(to right, orange, rgb(255, 121, 237));
+    background: #ffb700;
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -70,14 +74,23 @@ html{
     -moz-text-fill-color: transparent;
     background-repeat: repeat;
 }
+
+.intro-about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 #about {
+  display: flex;
+  justify-content: center;
     user-select: none;
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 55%;
     color: #ffa0b1;
     font-size: 2.3em;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    transform: translateX(-50%);
     float: left;
     background: linear-gradient(-45deg, rgb(255, 208, 1), rgb(255, 0, 242));
     background-size: 100%;
@@ -86,7 +99,6 @@ html{
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     background-repeat: repeat;
-    font-weight: 400;
 }
 
 .fadeup:hover {
@@ -96,12 +108,31 @@ html{
 }
 
 
-.social {
-    position: absolute;
-    top: 70%;
-    left: 10%;
+.social ul{
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  text-align: center;
 
 }
+.social ul li a:nth-child(1){
+  margin-right: 1.5em;
+  display: inline-block;
+}
+.social ul li a:nth-child(2){
+  margin-left: 1.5em;
+  display: inline-block;
+}
+
+.social_gh {
+  transform: translateX(-0.5em);
+}
+
+.social_ltt {
+  transform: translateX(0.5em);
+}
+
+
 
 
 
@@ -133,12 +164,6 @@ html{
 }
 
 .social_gh, .social_ltt {
-    box-shadow: 0px 110px 38px -26px black;
-    height: 0;
-    width: 0;
-}
-.social_ltt {
-    margin-left: 7em;
 }
 
 .social_gh:before {
@@ -152,7 +177,7 @@ html{
     border-radius: 0.2em;
     background-color: rgb(133, 132, 132);
     font-size: 1.2em;
-    color: #ffa0b1;
+    color: #ff7b00;
     width: 11.5em;
     padding: 0.73em;
     text-align: center;
@@ -175,7 +200,7 @@ html{
     border-radius: 0.2em;
     background-color: rgb(133, 132, 132);
     font-size: 1.2em;
-    color: #ffa0b1;
+    color: #ff7b00;
     width: 11.5em;
     padding: 0.73em;
     text-align: center;
@@ -277,6 +302,15 @@ svg:hover polyline{
   animation: draw 2s infinite ease-in-out;
 }
 
+.svg-container {
+  position: absolute; 
+  left: 50%; 
+  top: 15%; 
+  transform: translateX(-50%);
+  z-index: 99;  
+  display: inline-block
+}
+
 @keyframes draw {
   100% {
     stroke-dashoffset: 0;
@@ -302,7 +336,8 @@ svg:hover polyline{
   width: 50%;
   left: 10%;
   top: 20%;
-  background: linear-gradient(to bottom, #1a2238, #0c101a);
+  /* background: linear-gradient(to bottom, #1a2238, #0c101a); */
+  background-color: #013728;
   border-radius: 1em;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   font-family: "Inter", sans-serif;
@@ -409,7 +444,8 @@ svg:hover polyline{
   width: 50%;
   left: 10%;
   top: 20%;
-  background: linear-gradient(to bottom, #1a2238, #0c101a);
+  /* background: linear-gradient(to bottom, #1a2238, #0c101a); */
+  background-color: #4d1301;
   border-radius: 1em;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   font-family: "Inter", sans-serif;

@@ -311,13 +311,14 @@ function displaykeybimag() {
         var par = $(parent).position()
         var width = $(parent).outerWidth()
         var height = $(parent).outerHeight()
-    if (document.querySelector(elem).getAttribute("positioned") == "false"){
+    if (document.querySelector(elem).getAttribute("data-positioned") == "false"){
 
         $(elem).css({
             position: "absolute",
             top: (par.top + height + height*50/100) + "px",
             left: (par.left + width*2.3/4 - $(elem).outerWidth() - 20) + "px"
         })}
+        document.querySelector(elem).setAttribute("data-positioned", "true")
         document.getElementById("keyb-1").classList.add("appear")
         try{document.getElementById("keyb-1").classList.remove("disappear")}catch(ex){console.log(ex)}
     }, 00);
@@ -327,13 +328,14 @@ function displaykeybimag() {
         var par = $(parent).position()
         var width = $(parent).outerWidth()
         var height = $(parent).outerHeight()
-    if (document.querySelector(elem).getAttribute("positioned") == "false"){
+    if (document.querySelector(elem).getAttribute("data-positioned") == "false"){
 
         $(elem).css({
             position: "absolute",
             top: (par.top + height + height*50/100) + "px",
             left: (par.left + width/2 + 0.5*parseFloat(getComputedStyle(document.getElementById("keybhref")).fontSize)) + "px"
         })}
+        document.querySelector(elem).setAttribute("data-positioned", "true")
         document.getElementById("keyb-2").classList.add("appear")
         try{document.getElementById("keyb-2").classList.remove("disappear")}catch(ex){console.log(ex)}
     }, 200);
@@ -343,13 +345,14 @@ function displaykeybimag() {
         var par = $(parent).position()
         var width = $(parent).outerWidth()
         var height = $(parent).outerHeight()
-    if (document.querySelector(elem).getAttribute("positioned") == "false"){
+    if (document.querySelector(elem).getAttribute("data-positioned") == "false"){
 
         $(elem).css({
             position: "absolute",
             top: (par.top + height + height*50/100) + "px",
             left: ((par.left + width*1.7/4 + $(elem).outerWidth()) + 2*parseFloat(getComputedStyle(document.getElementById("keybhref")).fontSize)) + "px"
         })}
+        document.querySelector(elem).setAttribute("data-positioned", "true")
         document.getElementById("keyb-3").classList.add("appear")
         console.log(parseFloat(getComputedStyle(document.getElementById("buthref")).fontSize))
         try{document.getElementById("keyb-3").classList.remove("disappear")}catch(ex){console.log(ex)}
@@ -379,7 +382,7 @@ function displaybuttimag() {
         var par = $(parent).position()
         var width = $(parent).outerWidth()
         var height = $(parent).outerHeight()
-    if (document.querySelector(elem).getAttribute("positioned") == "false"){
+    if (document.querySelector(elem).getAttribute("data-positioned") == "false"){
 
         $(elem).css({
             position: "absolute",
@@ -394,13 +397,14 @@ function displaybuttimag() {
         var par = $(parent).position()
         var width = $(parent).outerWidth()
         var height = $(parent).outerHeight()
-    if (document.querySelector(elem).getAttribute("positioned") == "false"){
+    if (document.querySelector(elem).getAttribute("data-positioned") == "false"){
 
         $(elem).css({
             position: "absolute",
             top: (par.top + height + height*50/100) + "px",
             left: (par.left + width/2 + 0.5*parseFloat(getComputedStyle(document.getElementById("buthref")).fontSize)) + "px",
         })}
+        document.querySelector(elem).setAttribute("data-positioned", "true")
         document.getElementById("butt-2").classList.add("appear")
         try{document.getElementById("butt-2").classList.remove("disappear")}catch(ex){console.log(ex)}
     }, 200);
@@ -422,7 +426,7 @@ function displayheadimag() {
     var par = $(parent).position()
     var width = $(parent).outerWidth()
     var height = $(parent).outerHeight()
-    if (document.querySelector(elem).getAttribute("positioned") == "false"){
+    if (document.querySelector(elem).getAttribute("data-positioned") == "false"){
       $(elem).css({
         position: "absolute",
         top: (par.top + height + height*50/100) + "px",
@@ -436,7 +440,7 @@ function displayheadimag() {
         left: $("#head-1").offset().left - bounding.left + 30
       })}}
       
-      document.querySelector(elem).setAttribute("positioned", "true")
+      document.querySelector(elem).setAttribute("data-positioned", "true")
     document.getElementById("head-1").classList.add("appear")
     try{document.getElementById("head-1").classList.remove("disappear")}catch(ex){console.log(ex)};
 
@@ -446,7 +450,7 @@ function displayheadimag() {
       var par = $(parent).position()
       var width = $(parent).outerWidth()
       var height = $(parent).outerHeight()
-      if (document.querySelector(elem).getAttribute("positioned") == "false"){
+      if (document.querySelector(elem).getAttribute("data-positioned") == "false"){
         $(elem).css({
           position: "absolute",
           top: (par.top + height + height*50/100) + "px",
@@ -458,7 +462,7 @@ function displayheadimag() {
             left: $("#head-2").offset().left - bounding.left + 30
           })
         }}
-        document.querySelector(elem).setAttribute("positioned", "true")
+        document.querySelector(elem).setAttribute("data-positioned", "true")
       document.getElementById("head-2").classList.add("appear")
       try{document.getElementById("head-2").classList.remove("disappear")}catch(ex){console.log(ex)}
   }, 200);
@@ -476,13 +480,13 @@ function displaypenimag() {
     var par = $(parent).position()
     var width = $(parent).outerWidth()
     var height = $(parent).outerHeight()
-    if (document.querySelector(elem).getAttribute("positioned") == "false"){
+    if (document.querySelector(elem).getAttribute("data-positioned") == "false"){
       $(elem).css({
         position: "absolute",
         top: (par.top + height + height*50/100) + "px",
         left: (par.left + width*2.3/4 - $(elem).outerWidth()/2) + "px"
       })}
-      document.querySelector(elem).setAttribute("positioned", "true")
+      document.querySelector(elem).setAttribute("data-positioned", "true")
     document.getElementById("pen").classList.add("appear")
     try{document.getElementById("pen").classList.remove("disappear")}catch(ex){console.log(ex)};
 }
@@ -498,13 +502,13 @@ function displaydbotimag() {
     var par = $(parent).position()
     var width = $(parent).outerWidth()
     var height = $(parent).outerHeight()
-    if (document.querySelector(elem).getAttribute("positioned") == "false"){
+    if (document.querySelector(elem).getAttribute("data-positioned") == "false"){
       $(elem).css({
         position: "absolute",
         top: (par.top + height/2 - $(elem).outerHeight()/2) + "px",
         left: (par.left + width + 20) + "px"
       })}
-      document.querySelector(elem).setAttribute("positioned", "true")
+      document.querySelector(elem).setAttribute("data-positioned", "true")
     document.getElementById("venomsc").classList.add("appear")
     try{document.getElementById("venomsc").classList.remove("disappear")}catch(ex){console.log(ex)};
 }
@@ -519,13 +523,13 @@ function displaycustimag() {
     var par = $(parent).position()
     var width = $(parent).outerWidth()
     var height = $(parent).outerHeight()
-    if (document.querySelector(elem).getAttribute("positioned") == "false"){
+    if (document.querySelector(elem).getAttribute("data-positioned") == "false"){
       $(elem).css({
         position: "absolute",
         top: (par.top + height/2 - $(elem).outerHeight()/2) + "px",
         left: (par.left + width + 20) + "px"
       })}
-      document.querySelector(elem).setAttribute("positioned", "true")
+      document.querySelector(elem).setAttribute("data-positioned", "true")
     document.getElementById("cust").classList.add("appear")
     try{document.getElementById("cust").classList.remove("disappear")}catch(ex){console.log(ex)};
 }
