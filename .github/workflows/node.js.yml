@@ -23,7 +23,7 @@ jobs:
           directory: "CSS"
           
       - name: Auto Minify HTML
-        uses: zugazagoitia/minify-js@v0.2
+        uses: jossydevers/minify-js@v1.0.0
         with: 
           directory: "index.html"
           
