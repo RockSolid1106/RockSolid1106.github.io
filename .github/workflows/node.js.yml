@@ -2,7 +2,7 @@ name: Minify JS
 
 on:
   push:
-    branches: [ main ]
+    branches: [ development ]
 
 jobs:
   minify:
@@ -28,4 +28,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Github Action: Auto Minified JS and CSS files"
-          branch: ${{ github.ref }}
+          branch: "main"
