@@ -24,7 +24,10 @@ jobs:
           directory: "CSS"
           output: "min_css"
           
-          
+      - name: Delete index.html
+        uses: JesseTG/rm@v1.0.2
+        with:
+          path: "index.html"
 
       - name: Create a copy of index-development.html
         uses: canastro/copy-file-action@master
