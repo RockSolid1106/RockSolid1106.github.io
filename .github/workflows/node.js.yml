@@ -37,13 +37,46 @@ jobs:
           
           
           
-      - name: Find and Replace
+      - name: Find and Replace 1
         uses: jacobtomlinson/gha-find-replace@v2
         with:
           include: "index.html"
-          find: "<title>RockSolid1106</title>"
-          replace: "test"
+          find: '<link rel="stylesheet" href="CSS/style.css">'
+          replace: '<link rel="stylesheet" href="min_css/style.min.css">'
           regex: false
+          
+      - name: Find and Replace 2
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          include: "index.html"
+          find: '<link rel="stylesheet" href="CSS/anim.css">'
+          replace: '<link rel="stylesheet" href="min_css/anim.min.css">'
+          regex: false     
+          
+      - name: Find and Replace 3
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          include: "index.html"
+          find: "<script src='JS/typewriter.js'></script>"
+          replace: "<script src='min_js/typewriter.min.js'></script>"
+          regex: false        
+          
+      - name: Find and Replace 4
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          include: "index.html"
+          find: '<script src="JS/particles.js"></script>'
+          replace: '<script src="min_js/particles.min.js"></script>'
+          regex: false   
+          
+      - name: Find and Replace 5
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          include: "index.html"
+          find: '<script src="JS/script.js"></script>'
+          replace: '<script src="min_js/script.min.js"></script>'
+          regex: false               
+                    
           
       - name: Auto committing minified files
         uses: stefanzweifel/git-auto-commit-action@v4
