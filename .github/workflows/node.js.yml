@@ -5,7 +5,7 @@ on:
     branches: [ development ]
 
 jobs:
-  minify:
+  Minify:
   
     runs-on: ubuntu-latest
     steps:
@@ -16,16 +16,21 @@ jobs:
         uses: nizarmah/auto-minify@v2.1.1
         with:
           directory: "JS"
-          output: "min_js"
           
       - name: Auto Minify CSS
         uses: nizarmah/auto-minify@v2.1.1
         with:
           directory: "CSS"
-          output: "min_css"
+          
+      - name: Auto Minify HTML
+        uses: zugazagoitia/minify-js@v0.2
+        with: 
+          directory: "index.html"
           
       - name: Auto committing minified files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Github Action: Auto Minified JS and CSS files"
           branch: "main"
+          
+  
