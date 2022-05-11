@@ -24,13 +24,14 @@ jobs:
           
       - name: Auto Minify HTML
         uses: jossydevers/minify-js@v1.0.0
-        with: 
-          directory: "index.html"
+        with:
+          directory: "*.html"
           
       - name: Auto committing minified files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Github Action: Auto Minified JS and CSS files"
           branch: "main"
+          push-options: "--force"
           
   
