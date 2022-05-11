@@ -9,7 +9,9 @@ jobs:
   
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        
       - name: Auto Minify JS
         uses: nizarmah/auto-minify@v2.1.1
         with:
