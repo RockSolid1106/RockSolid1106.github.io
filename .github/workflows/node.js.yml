@@ -24,6 +24,24 @@ jobs:
           directory: "CSS"
           output: "min_css"
           
+          
+
+      - name: Create a copy of index-development.html
+        uses: canastro/copy-file-action@master
+        with:
+          source: "index-development.html"
+          target: "index.html"
+          
+          
+          
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          include: "index.html"
+          find: "<title>RockSolid1106</title>"
+          replace: "test"
+          regex: false
+          
       - name: Auto committing minified files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
