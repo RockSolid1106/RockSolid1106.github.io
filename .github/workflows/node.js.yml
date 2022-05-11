@@ -2,7 +2,7 @@ name: Minify JS
 
 on:
   push:
-    branches: [ development ]
+    branches: [ main ]
 
 jobs:
   Minify:
@@ -15,12 +15,12 @@ jobs:
       - name: Auto Minify JS
         uses: nizarmah/auto-minify@v2.1.1
         with:
-          directory: "JS"
+          directory: "min_js"
           
       - name: Auto Minify CSS
         uses: nizarmah/auto-minify@v2.1.1
         with:
-          directory: "CSS"
+          directory: "min_css"
 
           
       - name: Auto committing minified files
