@@ -32,6 +32,6 @@ jobs:
         with:
           commit_message: "Github Action: Auto Minified JS and CSS files"
           branch: "main"
-          push-options: "--force"
+          push_options: "--force"
           
   
