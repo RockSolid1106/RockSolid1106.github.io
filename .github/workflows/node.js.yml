@@ -36,7 +36,7 @@ jobs:
           target: "index.html"
           
       - name: Auto Minify HTML
-        uses: uses: zugazagoitia/minify-js@v0.2
+        uses: zugazagoitia/minify-js@v0.2
         with:
           directory: 'index.html'       
           
