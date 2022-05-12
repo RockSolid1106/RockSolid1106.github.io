@@ -36,7 +36,7 @@ jobs:
           target: "index.html"
           
       - name: Auto Minify HTML
-        uses: zugazagoitia/minify-js@v0.2
+        uses: RockSolid1106/minify-js@v0.5
         with:
           directory: 'index.html'       
           
