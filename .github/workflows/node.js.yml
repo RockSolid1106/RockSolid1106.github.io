@@ -35,7 +35,10 @@ jobs:
           source: "index-development.html"
           target: "index.html"
           
-          
+      - name: Auto Minify HTML
+        uses: docker://devatherock/minify-js:1.0.3
+        with:
+          directory: 'index.html'       
           
       - name: Find and Replace 1
         uses: jacobtomlinson/gha-find-replace@v2
