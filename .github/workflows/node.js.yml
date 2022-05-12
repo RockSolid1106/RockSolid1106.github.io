@@ -36,7 +36,7 @@ jobs:
           target: "index.html"
           
       - name: Auto Minify HTML
-        uses: docker://devatherock/minify-js:1.0.3
+        uses: uses: zugazagoitia/minify-js@v0.2
         with:
           directory: 'index.html'       
           
